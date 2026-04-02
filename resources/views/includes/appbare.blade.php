@@ -83,10 +83,6 @@ $lang = app()->getLocale();
                     {{ $lang == 'ar' ? 'مركز المساعدة' : 'Help Center' }}
                 </a>
 
-                <a href="{{ LaravelLocalization::getLocalizedURL($lang, '/contact') }}"
-                    class="{{ request()->is($lang . '/contact') ? 'border-b-2 border-[var(--accent)]' : '' }}">
-                    {{ $lang == 'ar' ? 'اتصل بنا' : 'Contact' }}
-                </a>
 
                 
 
